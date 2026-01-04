@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,29 @@
     <link rel="stylesheet" href="./style_pages/style.css">
     <link href='https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <nav class="navbar">
         <a href="#" class="logo">PORTFOLIO</a>
-            <ul>
-                <li class="active"><a href="">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./skills.html">Skills</a></li>
-                <li><a href="./projects.html">Project Session</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
+        <ul>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects </a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-    <div class="bar-animation">
-        <div class="bar" style="--i:6;"></div>
-        <div class="bar" style="--i:5;"></div>
-        <div class="bar" style="--i:4;"></div>
-        <div class="bar" style="--i:3;"></div>
-        <div class="bar" style="--i:2;"></div>
-        <div class="bar" style="--i:1;"></div>
-    </div>
-
-    <section class="home">
+    <section id="home">
         <div class="home-info">
             <h1>Kaviyarasan S</h1>
-            <h2>I am a 
+            <h2>I am a
                 <span style="--i:3;" data-text="Fullstack Developer(Beginner)">Fullstack Developer(Beginner)</span>
                 <span style="--i:2;" data-text="Application Bulider">Application Bulider</span>
                 <span style="--i:1;" data-text="Gamer">Gamer</span>
             </h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Necessitatibus totam maxime inventore molestiae quae odio! 
-            Doloribus harum maxime totam molestias!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Necessitatibus totam maxime inventore molestiae quae odio!
+                Doloribus harum maxime totam molestias!</p>
             <div class="btn-sci">
                 <a href="#" class="btn">Downlode CV</a>
                 <div class="sci">
@@ -55,5 +48,203 @@
             </div>
         </div>
     </section>
+
+    <section id="about">
+        <div class="container">
+            <h1>About Me</h1>
+            <p class="intro">
+                Hi, I'm <span>Kaviyarasan</span>, a passionate web developer and learner.
+            </p>
+
+            <p>
+                I am interested in creating clean and responsive websites using
+                HTML, CSS, and JavaScript. I enjoy learning new technologies and
+                improving my skills by building projects.
+            </p>
+
+            <p>
+                Currently, I am focusing on web development and backend technologies
+                like FastAPI and databases. My goal is to become a full-stack developer.
+            </p>
+
+            <div class="info">
+                <div><strong>Skills:</strong> HTML, CSS, JavaScript, Python</div>
+                <div><strong>Interests:</strong> Web Design, Coding, Photography, Gaming</div>
+                <div><strong>Email:</strong> kaviyarasan08022008@gmail.com</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h1>My Skills</h1>
+        <p class="subtitle">Technologies I work with</p>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <h2>Frontend</h2>
+
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="bar">
+                        <div class="progress html"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="bar">
+                        <div class="progress css"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="bar">
+                        <div class="progress js"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h2>Backend</h2>
+
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="bar">
+                        <div class="progress python"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>FastAPI</span>
+                    <div class="bar">
+                        <div class="progress fastapi"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>SQL</span>
+                    <div class="bar">
+                        <div class="progress sql"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h2>English & Life Skills</h2>
+
+                <div class="skill">
+                    <span>English</span>
+                    <div class="bar">
+                        <div class="progress English"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>LifeSkills</span>
+                    <div class="bar">
+                        <div class="progress LifeSkills"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h1>My Projects</h1>
+        <p class="subtitle">Some of the projects I have worked on</p>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <h2>Static Website</h2>
+                <p>
+                    A responsive static website built using HTML and CSS.
+                    This project helped me understand layout, styling, and responsiveness.
+                </p>
+
+                <p class="tech">Tech Used: HTML, CSS</p>
+
+                <div class="links">
+                    <a href=https://kaviyarasan08022008.github.io/classy-foots/ target="_blank">Live Demo</a>
+                    <a href=https://github.com/kaviyarasan08022008/classy-foots/tree/77974c456ecb8f2ae65f0d15549345641da94275/pages
+                        target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h2>Full Stack Application</h2>
+                <p>
+                    A full stack web application with backend and database integration.
+                    Users can perform CRUD operations securely.
+                </p>
+
+                <p class="tech">Tech Used: HTML, CSS, JS, Python, FastAPI, SQL</p>
+
+                <div class="links">
+                    <a href=https://kaviyarasan08022008.github.io/village_voices/ target="_blank">Live Demo</a>
+                    <a href="https://github.com/yourname/fullstack-project" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h2>Personal Portfolio</h2>
+                <p>
+                    My personal portfolio website showcasing my skills, projects,
+                    and contact details.
+                </p>
+
+                <p class="tech">Tech Used: HTML, CSS, JavaScript</p>
+
+                <div class="links">
+                    <a href="https://your-portfolio-link.com" target="_blank">Live Demo</a>
+                    <a href="https://github.com/yourname/portfolio" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-box">
+
+            <h1>Let’s Build Something 🚀</h1>
+            <p class="subtitle">
+                Have a project idea, collaboration, or just want to say hi?
+                Choose any option below.
+            </p>
+
+            <div class="contact-options">
+
+                <div class="flip-container">
+                    <div class="flip-box">
+                        <div class="front">Email</div>
+                        <div class="back">kaviyarasan0802<br>2008@gmail.com</div>
+                    </div>
+                </div>
+
+                <div class="flip-container">
+                    <div class="flip-box">
+                        <div class="front">Linkdin</div>
+                        <div class="back">www.linkedin.com/in/<br>kaviyarasan-s-169931394</div>
+                    </div>
+                </div>
+
+                <div class="flip-container">
+                    <div class="flip-box">
+                        <div class="front">whatsapp</div>
+                        <div class="back">8072635542</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta">
+                <p>📍 Available for internships & projects</p>
+            </div>
+
+        </div>
+    </section>
 </body>
+
 </html>
