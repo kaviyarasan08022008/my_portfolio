@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* --- GLOBAL STYLES --- */
 * {
     margin: 0;
     padding: 0;
@@ -28,12 +27,13 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 25px 9%;
+    padding: 10px 9%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
     visibility: hidden;
+    background-color: #2f3541;
     opacity: 0;
     animation: show-content 1.5s linear forwards;
     animation-delay: 1.2s;
@@ -47,7 +47,7 @@ a {
 }
 
 .navbar .logo{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 900px;
 }
 
@@ -230,9 +230,8 @@ a {
     object-fit: cover;
     mix-blend-mode: lighten;
 }
-
-
 /* --- ABOUT PAGE --- */
+
 #about {
     min-height: 100vh;
     display: flex;
@@ -249,7 +248,7 @@ a {
     margin: auto;
 }
 .container:hover{
-    box-shadow: 0px 0px 20px #7cf03d;
+    box-shadow: 0px 0px 20px #2c5364;
 }
 
 h1 {
@@ -299,7 +298,6 @@ h3{
 
 .skills h1 {
     font-size: 36px;
-    margin-bottom: 10px;
     color: #7cf03d;
 }
 
@@ -312,7 +310,7 @@ h3{
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
 }
 
 .skill-card {
@@ -404,6 +402,7 @@ h3{
 
 
 /* --- PROJECTS PAGE --- */
+
 .projects {
     min-height: 100vh;
     padding: 100px 20px;
@@ -415,14 +414,13 @@ h3{
 
 .projects h1 {
     font-size: 36px;
-    margin-bottom: 10px;
     color: #7cf03d;
 }
 
 .projects-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
@@ -477,8 +475,25 @@ h3{
     background: #0056b3;
 }
 
+.classy{
+    height: 220px;
+    width: 270px;
+}
+
+.village{
+    height: 220px;
+    width: 240px;
+    margin-left: 10px;
+}
+
+.profile{
+    height: 220px;
+    width: 230px;
+    margin-left: 13px;
+}
+
 /* --- CONTACT PAGE --- */
-.contact {
+#contact {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -487,7 +502,7 @@ h3{
 }
 
 .contact-box {
-    background: rgb(255, 255, 255);
+    background:linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     padding: 50px;
     max-width: 900px;
     border-radius: 20px;
@@ -495,19 +510,20 @@ h3{
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-.cta {
-    margin-top: 30px;
-    color: rgb(0, 0, 0);
+.subtitle{
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 
-.contact-box h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: #7cf03d;
+.cta {
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
 }
 
 .contact-options {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
     margin-top: 30px;
@@ -542,14 +558,15 @@ h3{
     justify-content: center;
     border-radius: 12px;
     font-family: Poppins, sans-serif;
-    color: #fff;
+    color: #000000;
 }
 
 .front {
-    background: #1c7de4;
+    background: #dbcdb3;
 }
 
 .back {
-    background: #7cf03d;
+    background: #9cc785;
     transform: rotateY(180deg);
 }
+
