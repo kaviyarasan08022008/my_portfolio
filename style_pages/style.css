@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth; /* Smooth scrolling formatting */
@@ -233,7 +232,7 @@ a {
 /* --- ABOUT PAGE --- */
 
 #about {
-    min-height: 100vh;
+    min-height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,8 +240,8 @@ a {
 .container {
     cursor: pointer;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    max-width: 800px;
-    padding: 40px;
+    max-width: 1000px;
+    padding: 30px;
     border-radius: 10px;
     color: white;
     margin: auto;
@@ -289,11 +288,12 @@ h3{
 /* --- SKILL PAGE --- */
 
 #skills {
-    min-height: 100vh; /* Make it take full screen height */
+    min-height: 100vh; 
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: auto;
 }
 
 .skills h1 {
@@ -315,7 +315,7 @@ h3{
 
 .skill-card {
     background: #fff;
-    padding: 30px;
+    padding: 40px;
     width: 300px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -343,37 +343,37 @@ h3{
     height: 100%;
     border-radius: 10px;
 }
-.html:hover{
-    width: 90%;
+.html{
+    width: 85%;
     background-color: #007bff;
 }
-.css:hover{
+.css{
     width: 85%; 
     background-color: #007bff;
 }
-.js:hover{
-    width: 40%;
+.js{
+    width: 15%;
     background-color: #007bff;
 }
 
-.python:hover{
-    width: 50%;
+.python{
+    width: 70%;
     background-color: #007bff;
 }
-.fastapi:hover{
-    width: 65%;
+.fastapi{
+    width: 75%;
     background-color: #007bff;
 }
-.sql:hover{
+.sql{
+    width: 70%;
+    background-color: #007bff;
+}
+.English{
     width: 60%;
     background-color: #007bff;
 }
-.English:hover{
-    width: 60%;
-    background-color: #007bff;
-}
-.LifeSkills:hover{
-    width: 85%;
+.LifeSkills{
+    width: 55%;
     background-color: #007bff;
 }
 
@@ -404,14 +404,16 @@ h3{
 /* --- PROJECTS PAGE --- */
 
 .projects {
-    min-height: 100vh;
-    padding: 100px 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    max-width: 1000px;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+    margin-top: 100px;
 }
-
+.pro{
+    margin-top: 100px;
+}
 .projects h1 {
     font-size: 36px;
     color: #7cf03d;
@@ -422,6 +424,7 @@ h3{
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
+    margin-top: 70px;
 }
 
 .project-card {
@@ -441,7 +444,7 @@ h3{
 }
 
 .project-card h2 {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     color: #007bff;
 }
 
@@ -488,17 +491,24 @@ h3{
 
 .profile{
     height: 220px;
-    width: 230px;
-    margin-left: 13px;
+    margin-left: -15px;
+    border-radius: 8px;
+    width: 300px;
 }
 
 /* --- CONTACT PAGE --- */
-#contact {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
+#contact{
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    margin-top: 130px;
+    margin-bottom: 150px;
+}
+
+
+#contact h1 {
+    font-size: 2rem;
+    margin-top: 95px;
 }
 
 .contact-box {
@@ -533,7 +543,7 @@ h3{
     perspective: 1000px;
     width: 200px;
     height: 120px;
-    margin: 0 auto; /* Center items */
+    margin: 0 auto; 
 }
 
 .flip-box {
@@ -570,3 +580,68 @@ h3{
     transform: rotateY(180deg);
 }
 
+/* achivement page */
+
+body {
+    background: #0f172a;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .hobby-container {
+        min-height: 100vh; 
+        text-align: center;
+        display: flex;
+        flex-direction: row;    
+        justify-content: center;
+        margin: auto;
+        gap: 50px;
+        min-height: 140px;
+
+    }
+
+.hobby-card{
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: black;
+    cursor: pointer;
+    object-fit: cover;  
+}
+
+.hobby-card:hover{
+    box-shadow: 0px 0px 20px #2c5364;
+}
+
+#hobbies-intrest {
+    padding: 30px;
+    flex: 1;
+    text-align: left;
+}
+
+#hobbies-intrest h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.position {
+    font-size: 1.2rem;
+    color: #38bdf8;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.details {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #e5e7eb;
+}
+
+.year {
+    font-size: 0.95rem;
+    color: #94a3b8;
+}
