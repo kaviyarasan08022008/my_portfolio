@@ -5,8 +5,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-
-    /* Smooth scrolling formatting */
 }
 
 body {
@@ -71,7 +69,7 @@ a {
 
 #home {
     position: relative;
-    background-image: url(./assets/port_profile_1.jpg);
+    background-image: url(./assets/port_profile.jpeg);
     height: 100vh;
     padding: 60px 9% 0;
     display: flex;
@@ -87,7 +85,7 @@ a {
 }
 
 .home-info h1 {
-    color: #2f3541;
+    color: #7cf03d;
     font-size: 50px;
     text-align: start;
     margin-bottom: 50px;
@@ -95,7 +93,7 @@ a {
 
 .home-info h2 {
     display: inline-block;
-    color: #2f3541;
+    color: #7cf03d;
     font-size: 30;
     margin-top: -10px;
 }
@@ -104,7 +102,7 @@ a {
     position: relative;
     display: inline-block;
     color: transparent;
-    -webkit-text-stroke: .7px #2f3541;
+    -webkit-text-stroke: .7px #000000;
     animation: display-text 16s linear infinite;
     animation-delay: calc(-4s * var(--i));
 }
@@ -121,8 +119,8 @@ a {
     content: attr(data-text);
     position: absolute;
     width: 0;
-    border-right: 2px solid #000000;
-    color: #000000;
+    border-right: 2px solid #ffffff;
+    color: #ffffff;
     white-space: nowrap;
     overflow: hidden;
     animation: fill-text 4s linear infinite;
@@ -146,7 +144,7 @@ a {
     font-size: 23px;
     font-weight: 1000px;
     margin: 10px 0 25px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .home-info .btn-sci {
@@ -157,12 +155,12 @@ a {
 .btn {
     display: inline-block;
     padding: 10px 30px;
-    background: #2f3541;
-    border: 2px solid #2f3541;
+    background: #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 40px;
-    box-shadow: 0 0 10px #2f3541;
+    box-shadow: 0 0 10px #ffffff;
     font-size: 16px;
-    color: #1f242d;
+    color: #ffffff;
     font-weight: 600px;
     transition: .5s;
 }
@@ -176,22 +174,23 @@ a {
 .home-info .btn-sci .sci a {
     display: inline-flex;
     padding: 8px;
-    border: 2px solid #2f3541;
+    border: 2px solid #ffffff;
     border-radius: 50%;
     font-size: 20px;
-    color: #2f3541;
+    color: #ffffff;
     margin: 0 8px;
 }
 
 .home-info .btn-sci .sci a:hover {
-    background: #2f3541;
-    color: #ffffff;
-    box-shadow: 0 0 10px #343030;
+    background: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 10px 2px #ffffff;
 
 }
 
 
-/* --- ABOUT PAGE --- */
+/*ABOUT PAGE */
+
 #about {
     display: flex;
     align-items: flex-start;
@@ -265,7 +264,7 @@ h3 {
 }
 
 
-/* --- SKILL PAGE --- */
+/*SKILL PAGE*/
 
 #skills {
     min-height: 100vh;
@@ -416,7 +415,7 @@ h3 {
 
 
 
-/* --- PROJECTS PAGE --- */
+/*PROJECTS PAGE*/
 
 #projects{
     min-height: 100vh;
@@ -512,7 +511,7 @@ h3 {
     width: 300px;
 }
 
-/* --- CONTACT PAGE --- */
+/*CONTACT PAGE*/
 #contact {
     min-height: 100vh;
     text-align: center;
