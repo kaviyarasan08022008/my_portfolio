@@ -44,8 +44,11 @@ a {
 }
 
 .navbar .logo {
-    font-size: 40px;
-    font-weight: 900px;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(124, 240, 61, 0.3);
 }
 
 .navbar ul {
@@ -155,10 +158,9 @@ a {
 .btn {
     display: inline-block;
     padding: 10px 30px;
-    background: #ffffff;
+    background: transparent;
     border: 2px solid #ffffff;
     border-radius: 40px;
-    box-shadow: 0 0 10px #ffffff;
     font-size: 16px;
     color: #ffffff;
     font-weight: 600px;
@@ -166,9 +168,9 @@ a {
 }
 
 .btn:hover {
-    background: transparent;
-    color: #ffffff;
-    box-shadow: none;
+    box-shadow: 0 0 10px #ffffff;
+    background: white;
+    color: #000000;
 }
 
 .home-info .btn-sci .sci a {
@@ -189,81 +191,6 @@ a {
 }
 
 
-/*ABOUT PAGE */
-
-#about {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    background-color:#1f242d ;
-}
-
-.container {
-    cursor: pointer;
-    margin-top: 160px;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    max-width: 1000px;
-    height: 600px;
-    padding: 30px;
-    border-radius: 10px;
-    color: white;
-}
-
-.container:hover {
-    box-shadow: 0px 0px 20px #2c5364;
-}
-
-h1 {
-    text-align: center;
-    color: #7cf03d;
-    font-size: 35px;
-}
-.intro {
-    text-align: center;
-    font-size: 18px;
-    color: white;
-}
-
-.intro span {
-    color: #007bff;
-    font-weight: 800;
-}
-
-p {
-    line-height: 2.6;
-    font-size: 17px;
-    margin-top: 15px;
-}
-
-.info {
-    font-size: 17px;
-    margin-top: 28px;
-}
-
-.info div {
-    margin-bottom: 8px;
-}
-
-h3 {
-    color: #7cf03d;
-}
-
-.about-wrapper {
-    gap: 120px;
-    display: flex;
-    align-items: center;
-    margin-top: 220px;
-}
-
-.about-image img {
-    width: 280px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 9px;
-
-}
-
-
 /*SKILL PAGE*/
 
 #skills {
@@ -272,16 +199,13 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color:#1f242d ;
+    background-color: #1f242d;
 }
 
-.skil{
+.skil {
     margin-bottom: 50px;
-}
-
-.skills h1 {
-    font-size: 36px;
     color: #7cf03d;
+    font-size: 36px;
 }
 
 .subtitle {
@@ -329,12 +253,12 @@ h3 {
 }
 
 .html {
-    width: 85%;
+    width: 30%;
     background-color: #007bff;
 }
 
 .css {
-    width: 85%;
+    width: 25%;
     background-color: #007bff;
 }
 
@@ -344,27 +268,27 @@ h3 {
 }
 
 .python {
-    width: 70%;
+    width: 40%;
     background-color: #007bff;
 }
 
 .fastapi {
-    width: 75%;
+    width: 40%;
     background-color: #007bff;
 }
 
 .sql {
-    width: 70%;
+    width: 35%;
     background-color: #007bff;
 }
 
 .English {
-    width: 60%;
+    width: 30%;
     background-color: #007bff;
 }
 
 .LifeSkills {
-    width: 55%;
+    width: 50%;
     background-color: #007bff;
 }
 
@@ -417,19 +341,17 @@ h3 {
 
 /*PROJECTS PAGE*/
 
-#projects{
+#projects {
     min-height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color:#1f242d ;
-}
-.pro {
-    margin-top: 100px;
+    background-color: #1f242d;
 }
 
-.projects h1 {
+.pro {
+    margin-top: 100px;
     font-size: 36px;
     color: #7cf03d;
 }
@@ -518,16 +440,15 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color:#1f242d ;
+    background-color: #1f242d;
 }
 
-.cont{
+.cont {
     margin-bottom: 50px;
-
-}
-#contact h1 {
+    color: #7cf03d;
     font-size: 2rem;
     margin-top: 95px;
+
 }
 
 .contact-box {
@@ -624,8 +545,10 @@ h3 {
 .hobby-card:hover {
     box-shadow: 0px 0px 20px #2c5364;
 }
-.hob{
+
+.hob {
     margin-bottom: 250px;
+    color: #7cf03d;
 }
 
 #hobbies-intrest {
@@ -634,17 +557,17 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color:#1f242d ;
+    background-color: #1f242d;
 }
 
 #hobbies-intrest h2 {
-    font-size: 1.6rem;
+    font-size: 17px;
     margin-bottom: 10px;
 }
 
-.hobby-card i{
-   font-size: 40px;      
-    color: #1e212d;        
+.hobby-card i {
+    font-size: 40px;
+    color: #1e212d;
     margin-bottom: 15px;
 }
 
