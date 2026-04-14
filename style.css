@@ -514,11 +514,11 @@ a {
 }
 
 .front {
-    background: #dbcdb3;
+    background: #f4ebdb;
 }
 
 .back {
-    background: #9cc785;
+    background: #a6e783;
     transform: rotateY(180deg);
 }
 
