@@ -4,181 +4,352 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me - Kaviyarasan</title>
+  <title>About Me - Kaviyarasan S</title>
+  <meta name="description" content="Learn more about Kaviyarasan S - My background, family values, athletic achievements, passion for video editing, and my software academy journey.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-  <section class="hero" id="hero">
-    <div class="hero__bg-shapes">
-      <span class="shape shape--1"></span>
-      <span class="shape shape--2"></span>
-      <span class="shape shape--3"></span>
-    </div>
-    <div class="hero__content">
-      <div class="hero__text">
-        <span class="hero__eyebrow">About Me</span>
-        <h1 class="hero__heading">About<br><em>Me</em></h1>
-        <h2 class="hero__sub">Hi, I'm <strong>Kaviyarasan</strong></h2>
-        <p class="hero__intro">
-          I recently completed my 12th grade and I'm passionately diving into the world of
-          web development. I'm actively learning <span class="tag">HTML</span>
-          <span class="tag">CSS</span> <span class="tag">JavaScript</span> <span class="tag">React</span>and
-          <span class="tag">FastAPI</span> — building a foundation to become a
-          skilled <strong>Frontend Developer</strong>.
-        </p>
-      </div>
-      <div class="hero__img-wrap">
-        <div class="hero__img-frame">
-          <img src="./assets/profile_photo.jpeg" alt="Kaviyarasan – Profile Photo" class="hero__img" />
-        </div>
-        <div class="hero__img-deco"></div>
-      </div>
-    </div>
-    <div class="scroll-hint">↓ Scroll to explore</div>
-  </section>
+  <canvas id="particle-canvas"></canvas>
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">&lt;kavi/&gt;</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="menu-btn" id="menu-btn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
 
-
-  <section class="section" id="family">
-    <div class="container">
-      <div class="card card--reverse">
-        <div class="card__img-wrap">
-          <img src="./assets/family photo.jpg" alt="My Family" class="card__img" />
-          <div class="card__img-label">My People</div>
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero__bg-shapes">
+        <span class="shape shape--1"></span>
+        <span class="shape shape--2"></span>
+        <span class="shape shape--3"></span>
+      </div>
+      <div class="hero__content">
+        <div class="hero__text">
+          <span class="hero__eyebrow">About Me</span>
+          <h1 class="hero__heading">About<br><em>Me</em></h1>
+          <h2 class="hero__sub">Hi, I'm <strong>Kaviyarasan</strong></h2>
+          <p class="hero__intro">
+            I recently completed my 12th grade and I'm passionately diving into the world of
+            web development. I'm actively learning <span class="tag">HTML</span>
+            <span class="tag">CSS</span> <span class="tag">JavaScript</span> <span class="tag">React</span> and
+            <span class="tag">FastAPI</span> — building a foundation to become a
+            skilled <strong>Frontend Developer</strong>.
+          </p>
         </div>
-        <div class="card__body">
-          <span class="section-tag">Roots &amp; Values</span>
-          <h2 class="section-title">My <em>Family</em></h2>
-          <p>
-            I come from a humble and deeply supportive family that has shaped
-            who I am today. We believe in the power of <strong>hard work</strong> and
-            <strong>unity</strong> — qualities that have been passed down through
-            every challenge we've faced together.
-          </p>
-          <p>
-            My family stands behind every dream I pursue. They are my biggest
-            motivation to grow, to learn, and to make them proud. Their
-            unwavering encouragement fuels my journey into technology every
-            single day.
-          </p>
-          <div class="values">
-            <div class="value-chip">🤝 Unity</div>
-            <div class="value-chip">💪 Hard Work</div>
-            <div class="value-chip">❤️ Motivation</div>
+        <div class="hero__img-wrap">
+          <div class="hero__img-frame">
+            <img src="./assets/profile_photo.jpeg" alt="Kaviyarasan – Profile Photo" class="hero__img" />
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="scroll-hint">↓ Scroll to explore</div>
+    </section>
 
-  <section class="section section--dark" id="achievements">
-    <div class="container">
-      <div class="card">
-        <div class="card__body">
-          <span class="section-tag">On the Field</span>
-          <h2 class="section-title">Achieve<em>ments</em></h2>
-          <p>
-            Sport has taught me discipline, resilience, and the value of
-            teamwork — lessons that I carry into every coding project I
-            undertake.
-          </p>
-          <ul class="achievement-list">
-            <li>
-              <span class="ach-icon">⚽</span>
-              <div>
-                <strong>District Level Football Player</strong>
-                <p>Represented my district and competed at a high level, building mental toughness and team spirit.</p>
-              </div>
-            </li>
-            <li>
-              <span class="ach-icon">🏐</span>
-              <div>
-                <strong>Active Volleyball Player</strong>
-                <p>Regularly participate in volleyball competitions, honing coordination and strategic thinking.</p>
-              </div>
-            </li>
-            <li>
-              <span class="ach-icon">🏆</span>
-              <div>
-                <strong>Teamwork &amp; Leadership</strong>
-                <p>Consistently recognised for strong communication skills and the ability to lead and inspire peers.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="card__img-wrap">
-          <img src="./assets/achivement.png" alt="Achievement Certificate" class="card__img" />
-          <div class="card__img-label">Certificate</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="family">
-    <div class="container">
-      <div class="card card--reverse">
-        <div class="card__img-wrap">
-          <img src="./assets/video editing.jpg" alt="My Family" class="card__img" />
-          <div class="card__img-label">My Passion</div>
-        </div>
-        <div class="card__body">
-          <h2 class="section-title">My Passion for<em> Video Editing</em></h2>
-          <p>
-            I developed an interest in video editing after my friends appreciated my work. Their positive feedback
-            encouraged me to explore it further and take it more seriously.
-            Since then, I have edited many videos for my friends, working on different styles and ideas.
-            Through this, I have improved my creativity, timing, and understanding of how to make videos more engaging.
-            I enjoy bringing simple moments to life through editing, using effects, transitions, and music to create
-            meaningful content.
-            I am also continuously learning new techniques to improve my editing skills and make better videos over
-            time. <button class="value-chip"><a href="https://drive.google.com/drive/folders/1RzWk7ImjWKJ8CttUKg5SbCGiw4b-weTB?usp=sharing">Videos</a></button>
-          </p>
-          <div class="values">
-            <div class="value-chip">🎬 Creativity</div>
-            <div class="value-chip">🎥 Editing</div>
-            <div class="value-chip">🚀 Passion</div>
+    <section class="section" id="family">
+      <div class="container">
+        <div class="card card--reverse">
+          <div class="card__img-wrap">
+            <img src="./assets/family photo.jpg" alt="My Family" class="card__img" />
+            <div class="card__img-label">My People</div>
+          </div>
+          <div class="card__body">
+            <span class="section-tag">Roots &amp; Values</span>
+            <h2 class="section-title">My <em>Family</em></h2>
+            <p>
+              I come from a humble and deeply supportive family that has shaped
+              who I am today. We believe in the power of <strong>hard work</strong> and
+              <strong>unity</strong> — qualities that have been passed down through
+              every challenge we've faced together.
+            </p>
+            <p>
+              My family stands behind every dream I pursue. They are my biggest
+              motivation to grow, to learn, and to make them proud. Their
+              unwavering encouragement fuels my journey into technology every
+              single day.
+            </p>
+            <div class="values">
+              <div class="value-chip">🤝 Unity</div>
+              <div class="value-chip">💪 Hard Work</div>
+              <div class="value-chip">❤️ Motivation</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="academy">
-    <div class="container">
-      <div class="card card--reverse">
-        <div class="card__img-wrap1">
-          <img src="./assets/squad_image.png" alt="Academy Life Skills Project" class="card__img" />
-          <div class="card__img-label">Squad Work</div>
-        </div>
-        <div class="card__body">
-          <span class="section-tag">Learning &amp; Growth</span>
-          <h2 class="section-title">Academy <em>Journey</em></h2>
-          <p>
-            I joined the <strong>Freshworks STS Software Academy</strong>, a
-            transformative experience that pushed me beyond the classroom and
-            into real-world collaborative environments.
-          </p>
-          <ul class="journey-list">
-            <li><span>📚</span> Participated in impactful Life Skills projects that bridged personal development with
-              tech.</li>
-            <li><span>🧩</span> Worked in squad-based projects, collaborating with peers to solve real problems.</li>
-            <li><span>🗣️</span> Significantly improved my communication and leadership skills through workshops and
-              presentations.</li>
-          </ul>
+    <section class="section section--dark" id="achievements">
+      <div class="container">
+        <div class="card">
+          <div class="card__body">
+            <span class="section-tag">On the Field</span>
+            <h2 class="section-title">Achieve<em>ments</em></h2>
+            <p>
+              Sport has taught me discipline, resilience, and the value of
+              teamwork — lessons that I carry into every coding project I
+              undertake.
+            </p>
+            <ul class="achievement-list">
+              <li>
+                <span class="ach-icon">⚽</span>
+                <div>
+                  <strong>District Level Football Player</strong>
+                  <p>Represented my district and competed at a high level, building mental toughness and team spirit.</p>
+                </div>
+              </li>
+              <li>
+                <span class="ach-icon">🏐</span>
+                <div>
+                  <strong>Active Volleyball Player</strong>
+                  <p>Regularly participate in volleyball competitions, honing coordination and strategic thinking.</p>
+                </div>
+              </li>
+              <li>
+                <span class="ach-icon">🏆</span>
+                <div>
+                  <strong>Teamwork &amp; Leadership</strong>
+                  <p>Consistently recognised for strong communication skills and the ability to lead and inspire peers.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="card__img-wrap">
+            <img src="./assets/achivement.png" alt="Achievement Certificate" class="card__img" />
+            <div class="card__img-label">Certificate</div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="section" id="passion">
+      <div class="container">
+        <div class="card card--reverse">
+          <div class="card__img-wrap">
+            <img src="./assets/video editing.jpg" alt="Video Editing Work" class="card__img" />
+            <div class="card__img-label">My Passion</div>
+          </div>
+          <div class="card__body">
+            <span class="section-tag">Creativity</span>
+            <h2 class="section-title">My Passion for <em>Video Editing</em></h2>
+            <p>
+              I developed an interest in video editing after my friends appreciated my work. Their positive feedback
+              encouraged me to explore it further and take it more seriously.
+              Since then, I have edited many videos for my friends, working on different styles and ideas.
+              Through this, I have improved my creativity, timing, and understanding of how to make videos more engaging.
+              I enjoy bringing simple moments to life through editing, using effects, transitions, and music to create
+              meaningful content.
+              I am also continuously learning new techniques to improve my editing skills and make better videos over
+              time.
+            </p>
+            <div class="values">
+              <a href="https://drive.google.com/drive/folders/1RzWk7ImjWKJ8CttUKg5SbCGiw4b-weTB?usp=sharing" target="_blank" class="value-chip link-chip">
+                <span>📁 Videos Folder</span>
+              </a>
+              <div class="value-chip">🎬 Creativity</div>
+              <div class="value-chip">🎥 Editing</div>
+              <div class="value-chip">🚀 Passion</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="academy">
+      <div class="container">
+        <div class="card">
+          <div class="card__body">
+            <span class="section-tag">Learning &amp; Growth</span>
+            <h2 class="section-title">Academy <em>Journey</em></h2>
+            <p>
+              I joined the <strong>Freshworks STS Software Academy</strong>, a
+              transformative experience that pushed me beyond the classroom and
+              into real-world collaborative environments.
+            </p>
+            <ul class="journey-list">
+              <li><span>📚</span> Participated in impactful Life Skills projects that bridged personal development with tech.</li>
+              <li><span>🧩</span> Worked in squad-based projects, collaborating with peers to solve real problems.</li>
+              <li><span>🗣️</span> Significantly improved my communication and leadership skills through workshops and presentations.</li>
+            </ul>
+          </div>
+          <div class="card__img-wrap">
+            <img src="./assets/squad_image.png" alt="Academy Life Skills Project" class="card__img" />
+            <div class="card__img-label">Squad Work</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer">
     <p>Designed &amp; Built by <strong>Kaviyarasan</strong> · Aspiring Frontend Developer</p>
   </footer>
 
+  <script>
+    // Mobile Menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const navLinks = document.getElementById('nav-links');
+
+    menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuBtn.classList.toggle('active');
+        const icon = menuBtn.querySelector('i');
+        if (navLinks.classList.contains('active')) {
+            icon.className = 'fa-solid fa-xmark';
+        } else {
+            icon.className = 'fa-solid fa-bars';
+        }
+    });
+
+    // Close menu on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            menuBtn.classList.remove('active');
+            menuBtn.querySelector('i').className = 'fa-solid fa-bars';
+        });
+    });
+
+        // Professional IT Developer Skill Node Network Background
+        const canvas = document.getElementById('particle-canvas');
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+            let nodesList = [];
+            const skills = [
+                'html', 'css', 'js', 'react', 'python', 'fastapi', 
+                'sql', 'git', 'json', 'api', 'npm', 'await', 
+                'const', 'import', 'return', 'fn', 'db'
+            ];
+
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            window.addEventListener('resize', resizeCanvas);
+            resizeCanvas();
+
+            class SkillNode {
+                constructor() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.text = skills[Math.floor(Math.random() * skills.length)];
+                    this.fontSize = 11;
+                    this.alpha = Math.random() * 0.15 + 0.1; // Faint, subtle opacity (10% to 25%)
+                    this.twinkleSpeed = Math.random() * 0.003 + 0.001;
+                    this.direction = Math.random() > 0.5 ? 1 : -1;
+                    this.speedX = (Math.random() * 0.12 - 0.06); // Slow movement
+                    this.speedY = (Math.random() * 0.12 - 0.06);
+                    this.themeColor = Math.random() > 0.5 ? '#6366f1' : '#10b981'; // Indigo or Emerald
+                    this.glowColor = this.themeColor === '#6366f1' ? 'rgba(99, 102, 241,' : 'rgba(16, 185, 129,';
+                }
+                update() {
+                    this.x += this.speedX;
+                    this.y += this.speedY;
+
+                    // Bounce/wrap check
+                    if (this.x < -60) this.x = canvas.width + 60;
+                    if (this.x > canvas.width + 60) this.x = -60;
+                    if (this.y < -30) this.y = canvas.height + 30;
+                    if (this.y > canvas.height + 30) this.y = -30;
+
+                    // Twinkle alpha
+                    this.alpha += this.twinkleSpeed * this.direction;
+                    if (this.alpha >= 0.35) {
+                        this.alpha = 0.35;
+                        this.direction = -1;
+                    } else if (this.alpha <= 0.08) {
+                        this.alpha = 0.08;
+                        this.direction = 1;
+                    }
+                }
+                draw() {
+                    ctx.font = `600 ${this.fontSize}px "JetBrains Mono", Consolas, monospace`;
+                    const textWidth = ctx.measureText(this.text).width;
+                    const padX = 8;
+                    const padY = 5;
+                    const rectW = textWidth + padX * 2;
+                    const rectH = this.fontSize + padY * 2;
+                    const rectX = this.x - rectW / 2;
+                    const rectY = this.y - rectH / 2;
+                    const radius = 6;
+
+                    // Draw Glass capsule
+                    ctx.beginPath();
+                    ctx.roundRect(rectX, rectY, rectW, rectH, radius);
+                    ctx.fillStyle = `rgba(15, 21, 36, ${this.alpha * 0.4})`;
+                    ctx.fill();
+                    ctx.strokeStyle = `${this.glowColor}${this.alpha * 0.35})`;
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+
+                    // Draw Text
+                    ctx.fillStyle = `${this.glowColor}${this.alpha * 0.95})`;
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillText(this.text, this.x, this.y);
+                }
+            }
+
+            function drawConnections() {
+                for (let i = 0; i < nodesList.length; i++) {
+                    for (let j = i + 1; j < nodesList.length; j++) {
+                        const n1 = nodesList[i];
+                        const n2 = nodesList[j];
+                        const dx = n1.x - n2.x;
+                        const dy = n1.y - n2.y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+
+                        if (dist < 140) {
+                            const maxOpacity = 0.08;
+                            const opacity = (1 - dist / 140) * maxOpacity * Math.min(n1.alpha, n2.alpha);
+                            ctx.beginPath();
+                            ctx.moveTo(n1.x, n1.y);
+                            ctx.lineTo(n2.x, n2.y);
+                            ctx.strokeStyle = `rgba(99, 102, 241, ${opacity})`;
+                            ctx.lineWidth = 0.65;
+                            ctx.stroke();
+                        }
+                    }
+                }
+            }
+
+            function init() {
+                nodesList = [];
+                // Gentle, clean density
+                const numberOfNodes = Math.min(45, (canvas.width * canvas.height) / 32000);
+                for (let i = 0; i < numberOfNodes; i++) {
+                    nodesList.push(new SkillNode());
+                }
+            }
+            init();
+            window.addEventListener('resize', init);
+
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                // Draw connection network first
+                drawConnections();
+                // Then draw capsules on top
+                for (let i = 0; i < nodesList.length; i++) {
+                    nodesList[i].update();
+                    nodesList[i].draw();
+                }
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+  </script>
 </body>
 
 </html>
